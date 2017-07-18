@@ -8,8 +8,9 @@ body {
 }
 
 #top-left {
-    background-color: teal;
-    text-align: right
+    text-align: right;
+    border-bottom:  1px solid black;
+    border-right:  1px solid black;
 }
 
 h3 {
@@ -18,15 +19,14 @@ h3 {
 
 #top-right {
     display: table-cell;
-    background-color: grey;
     text-align: left;
     vertical-align: bottom;
-    
+    border-bottom:  1px solid black;
 }
 
 #bottom-left {
-    background-color: grey;
-    text-align: right
+    text-align: right;
+    border-right:  1px solid black;
 
 } 
 .fa {
@@ -38,13 +38,34 @@ a {
     color: black;
 }
 
-#bottom-right {
-    background-color: teal;
-    text-align: left
+a:hover {
+    color: darkgrey;
 }
+
+i:hover {
+        color: darkgrey;
+}
+
+#bottom-right {
+    text-align: left;
+}
+
 .card {
-     border: 1px solid black; 
-    border-radius: 8px;
+    background-color: darkgrey;
+    border: 1px solid black;  
+    border-radius: 8px; 
     padding:   8px;
-    box-shadow: 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 1px 3px rgba(0,0,0,0.3); 
+    /* width: 200px; */
+} 
+
+ .card-img-top {
+    border-radius: 8px;
+    width: 183px;
+} 
+
+.btn {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
