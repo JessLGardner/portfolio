@@ -1,5 +1,5 @@
 body {
-    background-color: grey;
+    background-color: #5a5a5a;
     width: 95%;
     margin: auto;
 }
@@ -22,11 +22,12 @@ body {
 #top-left {
     align-items: stretch;
     text-align: right;
-    border-right:  1px solid black;
+    border-right:  1px solid teal;
 }
 
-h3 {
-    color: black;
+h2 {
+    color: teal;
+    text-shadow: 1px 1px 2px #3d3d3d;
 }
 
 #top-right {
@@ -34,12 +35,15 @@ h3 {
     display: table-cell;
     text-align: left;
     vertical-align: bottom;
-    border-bottom:  1px solid black;
+    border-bottom:  1px solid teal;
+    color: #a9a9a9;
 }
 
 #bottom-left {
     text-align: right;
-    border-right:  1px solid black;
+    border-right:  1px solid teal;
+    color: #a9a9a9;
+    
 
 } 
 .fa {
@@ -52,11 +56,11 @@ a {
 }
 
 a:hover {
-    color: darkgrey;
+    color: #a9a9a9;
 }
 
 i:hover {
-        color: darkgrey;
+    color: #a9a9a9;
 }
 
 #bottom-right {
@@ -64,15 +68,14 @@ i:hover {
 }
 
 .card {
-    background-color: darkgrey;
-    border: 1px solid black;  
+    background-color: #a9a9a9;
+    border: 1px solid #2d2d2d;  
     border-radius: 8px; 
     padding:   8px;
-    box-shadow: 1px 3px rgba(0,0,0,0.3); 
-    /* width: 200px; */
-} 
+    box-shadow: 1px 2px 3px 2px rgba(0,0,0,0.2);
+}
 
- .card-img-top {
+ .card-img-top {    
     border-radius: 8px;
     width: 183px;
 } 
