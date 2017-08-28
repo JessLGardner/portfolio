@@ -65,7 +65,14 @@ i:hover {
 }
 
 #bottom-right {
-    text-align: left;
+    text-align: left;    
+}
+
+.card-deck {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 
 .card {
