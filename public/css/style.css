@@ -1,91 +1,179 @@
-/* font-family: 'Poppins', sans-serif;
-font-family: 'Play', sans-serif;
-font-family: 'Crushed', cursive;
-font-family: 'Raleway', sans-serif; */
-
 body {
-    /* background-color: #e5e5e5; */
-    /* background-color: #B4DECD;     */
     width: 100%;
-    /* height: 100vh; */
-    margin: auto;
     color: #033F3F;    
-    background: -webkit-linear-gradient(#C6F8C9 10%,#138486 90%); 
-    /* background: linear-gradient(#C6F8C9 10%,#1D8C8E 90%);  */
+    background: -webkit-linear-gradient(#EBF8F8 10%,#138486 90%); 
     background: linear-gradient(#EBF8F8 10%,#138486 90%); 
-    
-    /* background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png"), -webkit-linear-gradient(#C6F8C9 10%,#1D8C8E 90%); 
-    background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png"), linear-gradient(#C6F8C9 10%,#1D8C8E 90%);  */
-
-    /* background-image: url("https://www.transparenttextures.com/patterns/arches.png"), -webkit-linear-gradient(#C6F8C9 10%,#1D8C8E 90%); 
-    background-image: url("https://www.transparenttextures.com/patterns/arches.png"), linear-gradient(#C6F8C9 10%,#1D8C8E 90%);  */
-
-    
 }
 
+/* ----------------------------
+              NAV
+---------------------------- */
+
 .navbar {
-    padding: 15px 30px 15px 30px;
-    /* color: #1E392A; */
-    /* color: #033F3F; */
-    /* color: #EEEEEE; */
-    /* background-color: #1E392A; */
-    /* background-color: #22252C; */
-    /* border: 1px #508351; */
-    /* box-shadow: 1px 1px 5px grey; */
-    /* background-color: #C6F8C9; */
+    padding: 15px 30px;
     background: linear-gradient(#ffffff, #EBF8F8); 
-    /* font-family: 'Raleway', sans-serif; */
     font-family: 'Poppins', sans-serif;
-    /* background-image: url("https://www.transparenttextures.com/patterns/arches.png");    */
 }
 
 .navbar-brand {
     font-size: 2em;
-    color: #033F3F;  
-    
-}
-
-/* .anchor { padding-top: 88px; } */
-/* .navbar-toggler {
     color: #033F3F;     
 }
- */
 
-/* .collapse {
-    text-align: right;
-} */
-
-.row {
-    margin: 0 auto;
+.nav-link {
+    color: #033F3F;  
+    padding: 5px 8px; 
 }
 
-.resume {
+.nav-link:hover{
+    color: #ffffff;  
+    background-color: #F7B983; 
+    text-decoration: none; 
+    border-radius: 3px;
+}
+
+/*  to offset anchors bc of fixed navbar  */
+section span { 
+    margin-top: -88px;        
+    padding-bottom: 88px; 
+    display: block; 
     text-align: center;
 }
 
-.title {
+/* ----------------------------
+             ABOUT
+---------------------------- */
+
+.about {
+    margin-top: 60px;
+    padding: 40px 125px;
+    text-align: justify;
+    font-family: 'Raleway', sans-serif; 
+    font-size: 20px;
+}
+
+.about-title {
     text-align: center;
     text-shadow: 2px 1px 2px #F3A565;     
     font-family: 'Crushed', sans-serif;
     font-size: 3em;
 }
 
-/* .blurb {
-    background-color: rgba(238, 238, 238, 0.2);
-    
-    padding: 40px 100px;
+.resume {
     text-align: center;
-    box-shadow: 1px 1px 5px grey;
-} */
+}
 
-.about {
-    /* background-color: rgba(238, 238, 238, 0.2); */
-    margin-top: 60px;
+/* ----------------------------
+           PORTFOLIO
+---------------------------- */
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 3px #5E5E5E;
+}
+
+/* ----------------------------
+            PROJECT
+---------------------------- */
+
+.project {    
     padding: 40px 125px;
-    text-align: justify;
-    font-family: 'Raleway', sans-serif; 
-    font-size: 20px;
-    /* box-shadow: 1px 1px 5px grey; */   
+}
+
+.project-title{
+    color: #033F3F;      
+    text-shadow: 1px 1px 2px #ffffff;     
+}
+
+.project-title:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #033F3F;     
+}    
+
+.content {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;  
+}
+
+/* ----------------------------
+              TECH
+---------------------------- */
+
+.tech {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.devicon {
+    padding: 16px 20px;
+    color: white;
+    font-size: 4em; 
+    margin-bottom: 10px;   
+}
+
+/* ----------------------------
+             CONTACT
+---------------------------- */
+
+.contact {
+    color: #EEEEEE;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px; 
+}
+
+.contact-title {
+    text-shadow: 2px 2px 2px #F19F5C; 
+    font-family: 'Crushed', sans-serif;
+    font-size: 3em;
+    padding-bottom: 10px;
+}
+
+.fa {
+    padding: 8px;
+} 
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #033F3F;
+    text-decoration: none;    
+}
+
+/* ----------------------------
+            FOOT
+---------------------------- */
+
+.footer {
+    color: #033F3F;
+    text-align: center; 
+    padding: 30px;
+    background-color: #138486;
+}
+
+/* ----------------------------
+           MEDIA
+---------------------------- */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .about {
+        padding: 40px 70px !important; 
+    }
+    .project {
+        padding: 40px 70px !important;
+    }
+    .tech {
+        padding: 40px 70px !important;
+    }
+    .devicon {
+        padding: 16px 4px !important;
+    }
 }
 
 @media (max-width: 575px) {
@@ -96,199 +184,13 @@ body {
     .project{
         padding: 40px 40px !important;
     }
-    .content {
-        padding: 0;
+    .tech {
+        padding: 0 60px !important;
+    }  
+    .devicon {
+        padding: 16px 4px !important;
     }
-    .links {
+    .contact-links {
         font-size: 16px;     
     }
-    .devicon {
-        /* font-size: 3em !important;  */
-    }  
-}
-
-@media (max-width: 767px) {
-    .about {
-        padding: 40px 70px; 
-    }
-    .project{
-        padding: 40px 70px !important;
-    }
-
-    /* section span { 
-        margin-top: -240px;      
-        padding-bottom: 240px; 
-      } */
-}
-
-
-.carousel {
-    display: flex;
-    justify-content: center;
-    /* padding: 40px 200px; */
-    /* padding: 20px 0; */
-    
-    background-color: rgba(238, 238, 238, 0.4);
-    /* color: #1E392A; */
-    /* color: #033F3F; */
-    
-    /* padding: 40px 100px; */
-    /* text-align: center; */
-    box-shadow: 1px 1px 5px grey;
-
-}
-
-.carousel-caption {
-    /* background-color: rgba(0, 0, 0, 0.64); */
-    background-color: #000000;
-    position: static;
-        right: 15%;
-        bottom: 20px;
-        left: 15%;
-        z-index: 10;
-        padding-top: 10px;
-        padding-bottom: 2px;
-        color: #fff;
-        text-align: center;
-    
-}
-
-.project {
-    /* background-color: rgba(238, 238, 238, 0.2); */
-    
-    padding: 40px 125px;
-    /* text-align: center; */
-    /* box-shadow: 1px 1px 5px grey; */
-    
-}
-
-.project-title{
-    /* color: #ffffff; 
-    text-shadow: 1px 1px #F3A565; */
-    text-shadow: 1px 1px 2px #ffffff;     
-    /* text-align: left; */
-    color: #033F3F;      
-}
-
-.project-title:hover {
-    color: #ffffff;
-    text-shadow: 1px 1px 2px #033F3F;     
-    
-    
-}    
-
-.content {
-    text-align: left;
-    /* padding: 0 6px; */
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    
-}
-
-.tech {
-    /* background-color: rgba(238, 238, 238, 0.2); */
-    /* color: #1E392A; */
-    /* color: #033F3F; */
-    
-    padding: 40px 100px;
-    text-align: center;
-    /* box-shadow: 1px 1px 5px grey; */
-}
-
-.contact {
-    /* background-color: rgba(238, 238, 238, 0.2); */
-    color: #EEEEEE;
-    /* font-family: 'Raleway', sans-serif; */
-    padding: 40px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 1px;
-    /* box-shadow: 1px 1px 5px grey; */
-    font-size: 20px; 
-    
-}
-.contact p {
-    /* font-size: 16px;  */
-}
-
-.contact-title {
-    text-shadow: 2px 2px 2px #F19F5C; 
-    font-family: 'Crushed', sans-serif;
-    font-size: 3em;
-    padding-bottom: 10px;
-    
-}
-
-.devicon {
-    padding: 8px 12px;
-    color: white;
-    font-size: 4em; 
-    margin-bottom: 10px;   
-}
-
-/* .devicon2 {
-    padding: 8px;
-    color: #033F3F;    
-    font-size: 4em;    
-} */
-
-
-
-.fa {
-    /* color: #1E392A; */
-    /* color: black; */
-    padding: 8px;
-} 
-
-a {
-    color: white;
-    word-wrap: break-word;
-}
-
-a:hover {
-    color: #033F3F;
-    text-decoration: none; 
-    
-}
-
-.footer {
-    color: #033F3F;
-    /* background-color: #1E392A; */
-    text-align: center; 
-    /* padding: 10px;  */
-    padding: 30px;
-    background-color: #138486;
-    /* background-image: url("https://www.transparenttextures.com/patterns/arches.png");   */
-}
-
-
-
-.nav-link {
-    color: #033F3F;  
-    padding: 5px 8px; 
-    /* padding-top: 88px;  */     
-}
-.nav-link:hover{
-    color: #ffffff !important;  
-    background-color: #F7B983; 
-    text-decoration: none; 
-    border-radius: 3px;
-}
-.nav-item {
-    /* text-align: right; */
-}
-
-/* .about:target:before { 
-    display: block; 
-    content: " "; 
-    margin-top: -88px; 
-    height: 88px; 
-    visibility: hidden; 
-  } */
-
-section span { 
-    margin-top: -88px;        /* Size of fixed header */
-    padding-bottom: 88px; 
-    display: block; 
-    text-align: center;
 }

@@ -3,3 +3,5 @@ $(document).ready(function () {
     $(".navbar-collapse").collapse('hide');
   });
 });
+
+// close mobile navbar toggle
